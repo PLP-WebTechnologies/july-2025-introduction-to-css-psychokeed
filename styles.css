@@ -1,0 +1,179 @@
+/* Global Reset & Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 5px solid #e74c3c;
+}
+
+.header h1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+/* Navigation Styles */
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #e74c3c;
+}
+
+/* Main Content Styles */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Intro Section */
+.intro-section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.intro-section h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* Button Styles */
+.learn-more {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #c0392b;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Individual Cards */
+.card {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* Box Model Demo Elements */
+.box-model-demo {
+    height: 100px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.margin-demo {
+    background-color: #3498db;
+    margin: 20px;
+}
+
+.border-demo {
+    background-color: #2ecc71;
+    border: 10px solid #27ae60;
+}
+
+.padding-demo {
+    background-color: #9b59b6;
+    padding: 20px;
+    border: 2px dashed white;
+}
+
+.inner-content {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Text Section */
+.text-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.text-section h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .card {
+        min-width: 100%;
+    }
+}
